@@ -4,8 +4,11 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
+import { createRequire } from "module";
 
-import packageJson from "./package.json" assert { type: "json" };
+
+const require = createRequire(import.meta.url);
+const packageJson = require("./package.json");
 
 export default [
   {
@@ -27,7 +30,7 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: "toastly.css", // Extracts CSS to a separate file
+        extract: "toastly.css",
         minimize: true,
       }),
       terser(),
@@ -38,6 +41,6 @@ export default [
     input: "src/index.ts",
     output: [{ file: "dist/index.d.ts", format: "es" }],
     plugins: [dts()],
-    external: [/\.css$/], // Ignore CSS definitions in d.ts
+    external: [/\.css$/],
   },
 ];
