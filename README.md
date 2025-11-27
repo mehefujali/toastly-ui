@@ -5,17 +5,28 @@
     Designed for simplicity and performance with modern design systems in mind.
   </p>
   
+  <!-- Badges -->
   <p>
+    <a href="https://toastly-ui.vercel.app/">
+      <img src="https://img.shields.io/website?url=https%3A%2F%2Ftoastly-ui.vercel.app%2F&up_message=Live%20Demo&up_color=success&style=flat-square" alt="Live Demo" />
+    </a>
     <a href="https://www.npmjs.com/package/toastly-ui">
       <img src="https://img.shields.io/npm/v/toastly-ui?style=flat-square&color=blue" alt="NPM Version" />
     </a>
     <a href="https://www.npmjs.com/package/toastly-ui">
       <img src="https://img.shields.io/bundlephobia/minzip/toastly-ui?style=flat-square&color=green" alt="Size" />
     </a>
-    <a href="https://github.com/YourUsername/toastly-ui/blob/main/LICENSE">
+    <a href="https://github.com/mehefujali/toastly-ui/blob/main/LICENSE">
       <img src="https://img.shields.io/npm/l/toastly-ui?style=flat-square&color=grey" alt="License" />
     </a>
   </p>
+
+  <!-- Quick Links -->
+  <h3>
+    <a href="https://toastly-ui.vercel.app/">✨ View Live Demo</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://www.npmjs.com/package/toastly-ui">📦 View on NPM</a>
+  </h3>
 </div>
 
 <hr />
@@ -50,7 +61,7 @@ Toastly UI creates a seamless notification experience for your users. Unlike oth
 <ul>
   <li><strong>Lightweight:</strong> Less than 5kb gzipped. Zero external UI dependencies.</li>
   <li><strong>Headless-ish:</strong> Full control over styling using CSS variables or custom classes.</li>
-  <li><strong>Smart Positioning:</strong> Supports 6 different screen positions.</li>
+  <li><strong>Smart Positioning:</strong> Supports 6 different screen positions (Top/Bottom - Left/Center/Right).</li>
   <li><strong>Promise Support:</strong> Native support for handling asynchronous operations (Loading -> Success/Error).</li>
   <li><strong>Multiple Variants:</strong> Includes Modern, Minimalist, Enterprise, and Glass styles.</li>
   <li><strong>Accessible:</strong> WAI-ARIA compliant for screen readers.</li>
@@ -210,7 +221,7 @@ toast.success('Profile Updated', {
 <p>Toastly UI uses CSS variables, making it easy to override styles to match your brand without fighting with specificity.</p>
 
 <pre><code class="language-css">:root {
-  --toastly-font: 'Helvetica Neue', sans-serif;
+  --toastly-font: 'Inter', sans-serif;
   --toastly-z-index: 5000;
 }
 
@@ -223,3 +234,9 @@ toast.success('Profile Updated', {
 <h2 id="license">License</h2>
 
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+<div align="center">
+  <p>
+    Created with ❤️ by <a href="https://mehefujali.com">Mehefuj Ali</a>
+  </p>
+</div>
